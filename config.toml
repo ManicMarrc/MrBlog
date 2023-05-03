@@ -1,0 +1,15 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "terminal"
+
+[params]
+  themeColor = "blue"
+  Toc = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "ManicMarrc's Blog"
+    subtitle = "An adventurous blog"
+    owner = "ManicMarrc"
+    copyright = "GPL-3.0"
