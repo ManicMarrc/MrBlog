@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://manicmarrc.github.io/MrBlog/"
 languageCode = "en-us"
 theme = "terminal"
 
