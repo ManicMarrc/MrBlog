@@ -5,6 +5,10 @@ theme = "terminal"
 [params]
   themeColor = "blue"
   Toc = true
+  centerTheme = true
+  showLastUpdated = true
+  oneHeadingSize = false
+  readingTime = true
 
 [languages]
   [languages.en]
