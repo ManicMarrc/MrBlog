@@ -4,10 +4,7 @@ date = "2023-05-03T17:08:58+07:00"
 author = "ManicMarrc"
 tags = ["Rust", "Game", "Tutorial"]
 keywords = ["Rust", "Game", "Tutorial"]
-description = ""
-showFullContent = false
-readingTime = false
-hideComments = false
+description = "Creating Pong in Rust using Macroquad"
 +++
 
 ## Introduction
