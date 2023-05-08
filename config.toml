@@ -1,6 +1,7 @@
-baseURL = "https://manicmarrc.github.io/MrBlog/"
+baseURL = "/"
 languageCode = "en-us"
 theme = "terminal"
+paginate = 10
 
 [params]
   themeColor = "blue"
@@ -17,3 +18,17 @@ theme = "terminal"
     subtitle = "An adventurous blog"
     owner = "ManicMarrc"
     copyright = "GPL-3.0"
+
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about"
+    [[languages.en.menu.main]]
+      identifier = "posts"
+      name = "Posts"
+      url = "/posts"
+    [[languages.en.menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags"
