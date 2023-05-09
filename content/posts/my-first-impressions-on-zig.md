@@ -4,7 +4,7 @@ date = "2023-05-08T16:50:41+07:00"
 author = "ManicMarrc"
 tags = ["Zig", "Impressions", "Programming Language"]
 keywords = ["Zig", "Impressions", "Programming Language"]
-description = "My first time using Zig and whats my first impressions on it"
+description = "My first time using Zig and whats my first impressions on it."
 +++
 
 ## Introduction
