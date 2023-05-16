@@ -32,3 +32,7 @@ paginate = 10
       identifier = "tags"
       name = "Tags"
       url = "/tags"
+    [[languages.en.menu.main]]
+      identifier = "search"
+      name = "Search"
+      url = "/search"

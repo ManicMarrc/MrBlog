@@ -1,0 +1,13 @@
+<script>
+window.store = {
+  {{ range where .Site.Pages "Section" "posts" }}
+  "{{ .Permalink }}": {
+    "title": "{{ .Title }}",
+    "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
+    "content": {{ .Content | plainify }},
+  },
+  {{ end }}
+};
+</script>
+<script src="/js/vendor/lunr.js"></script>
+<script src="/js/search.js"></script>
