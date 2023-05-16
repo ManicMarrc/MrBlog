@@ -5,6 +5,7 @@ window.store = {
     "title": "{{ .Title }}",
     "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
     "content": {{ .Content | plainify }},
+    "url": "{{ .Permalink }}"
   },
   {{ end }}
 };
