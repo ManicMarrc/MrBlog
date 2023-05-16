@@ -31,7 +31,7 @@ if (results.length) {
   for (const n in results) {
     const item = store[results[n].ref];
     resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>';
-    resultList += '<p>' + item.description.replace('Introduction', '').substring(0, 150) + '</p></li>';
+    resultList += '<p>' + item.description + '</p></li>';
   }
   document.getElementById('result').innerHTML = resultList;
 } else {
