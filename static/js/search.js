@@ -6,18 +6,20 @@ const idx = lunr(function () {
   this.field('title', {
     boost: 15
   });
-  this.field('content', {
+  this.field('description', {
     boost: 10
   });
-  this.field('tags', {
+  this.field('content', {
     boost: 5
   });
+  this.field('tags');
 
   for (const key in window.store) {
     this.add({
      id: key,
      title: window.store[key].title,
-     tags: window.store[key].category,
+     tags: window.store[key].tags,
+     description: window.store[key].description,
      content: window.store[key].content
     });
   }
@@ -29,7 +31,7 @@ if (results.length) {
   for (const n in results) {
     const item = store[results[n].ref];
     resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>';
-    resultList += '<p>' + item.content.replace('Introduction', '').substring(0, 150) + '...</p></li>';
+    resultList += '<p>' + item.description.replace('Introduction', '').substring(0, 150) + '</p></li>';
   }
   document.getElementById('result').innerHTML = resultList;
 } else {
