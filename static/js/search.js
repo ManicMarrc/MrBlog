@@ -30,6 +30,7 @@ if (results.length) {
   let resultList = '';
   for (const n in results) {
     const item = store[results[n].ref];
+    if (item.title === 'Posts') continue;
     resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>';
     resultList += '<p>' + item.description + '</p></li>';
   }
