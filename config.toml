@@ -4,7 +4,7 @@ theme = "terminal"
 paginate = 10
 
 [params]
-  themeColor = "blue"
+  themeColor = "red"
   Toc = true
   centerTheme = true
   showLastUpdated = true
